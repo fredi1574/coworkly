@@ -1,0 +1,14 @@
+# Root ignores
+node_modules/
+.env
+.env.local
+.DS_Store
+
+
+# Ignore specific to client
+coworkly-client/.env
+coworkly-client/.env.local
+
+# Ignore specific to server
+coworkly-server/.env
+coworkly-server/.env.local
