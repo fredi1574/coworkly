@@ -1,7 +1,7 @@
 "use client";
-
 import { useState } from "react";
 import { supabase } from "@/lib/supabaseClient";
+import { redirect } from "next/navigation";
 
 export default function Login() {
   const [email, setEmail] = useState("");
@@ -17,6 +17,7 @@ export default function Login() {
       console.error(error.message);
     } else {
       console.log("Login successful");
+      redirect("/dashboard");
     }
   };
 
@@ -26,6 +27,7 @@ export default function Login() {
       console.error(error.message);
     } else {
       console.log("Signup successful");
+      redirect("/dashboard");
     }
   };
 
