@@ -6,6 +6,7 @@ node_modules/
 
 
 # Ignore specific to client
+coworkly-client/.next
 coworkly-client/.env
 coworkly-client/.env.local
 
